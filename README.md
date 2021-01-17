@@ -9,6 +9,7 @@ docker-compose up
 ./.bin/dev.sh # run index with nodemon and inject env vars for DB
 ./.bin/mongo.sh # Launch mongo console to do queries
 
+
 ```
 
 ## Usage
