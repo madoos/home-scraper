@@ -1,11 +1,9 @@
-const { DB_URI } =require('./env')
-const { getDatabase } = require('./db')
-const { log } = require('./util')
+const { DB_URI } =require('./env');
+const { getDatabase } = require('./db');
+const { log } = require('./util');
 
 
-const db = getDatabase(DB_URI)
-
-
+const db = getDatabase(DB_URI); // ?
 
 const x = db.Homes.insert({
     pageSource: 'IDEALISTA',
@@ -19,8 +17,8 @@ const x = db.Homes.insert({
     gardenM2: 34,
     bedrooms: 34,
     bathrooms: 4,
-    description: "hey",
+    description: 'hey',
     images: [Buffer.from([])]
-})
+});
 
-x.fork(log, log)
+x.fork(log, log);

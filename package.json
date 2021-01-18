@@ -30,7 +30,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
+      "eslint . --ext js,ts,tsx . --fix --quiet --cache",
       "git add"
     ],
     "*.json": [
@@ -60,7 +60,8 @@
     ]
   },
   "scripts": {
-    "pretest": "eslint .",
+    "lint:js": "eslint . --ext js,ts,tsx --cache",
+    "lint:js:fix": "eslint . --ext js,ts,tsx . --fix --quiet --cache",
     "test": "jest",
     "tdd": "npm test -- --watch"
   },

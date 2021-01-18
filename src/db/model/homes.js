@@ -1,5 +1,5 @@
-const { createModel } = require('../mongo-driver')
-const Schema = require('../schema')
+const { createModel } = require('../mongo-driver');
+const Schema = require('../schema');
 
 // homeSchema :: Schema
 const homeSchema = Schema({
@@ -15,12 +15,14 @@ const homeSchema = Schema({
     bathrooms: Number,
     description: String,
     images: [Buffer]
-})
+});
+
+
 
 // createHomeModel :: Database -> Model
-const createHomeModel = createModel('homes', homeSchema)
+const createHomeModel = createModel('homes', homeSchema);
 
 module.exports = {
     homeSchema,
     createHomeModel
-}
+};
