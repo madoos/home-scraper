@@ -1,7 +1,7 @@
-const fetch = require("node-fetch");
-const { toAsync } = require("../util");
-const parse = require("cheerio");
-const { curry, pipe, map } = require("ramda");
+const fetch = require('node-fetch');
+const { toAsync } = require('../util');
+const parse = require('cheerio');
+const { curry, pipe, map } = require('ramda');
 const { load } = parse;
 
 // FetchPage :: URL -> Async Error String
